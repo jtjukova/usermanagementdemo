@@ -27,7 +27,7 @@ public class UserController {
     }
 
     @RequestMapping("user/{id}")
-    public String showProduct(@PathVariable Integer id, Model model){
+    public String showUser(@PathVariable Integer id, Model model){
         model.addAttribute("user", userService.getUserById(id));
         return "usershow";
     }
