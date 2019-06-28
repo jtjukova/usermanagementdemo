@@ -22,7 +22,6 @@ public class UserController {
     @RequestMapping(value = "/users", method = RequestMethod.GET)
     public String list(Model model){
         model.addAttribute("users", userService.listAllUsers());
-        System.out.println("Returning users:");
         return "users";
     }
 
@@ -46,7 +45,7 @@ public class UserController {
 
     @RequestMapping(value = "user", method = RequestMethod.POST)
     public String saveUser(User user){
-        userService.saveProduct(user);
+        userService.saveUser(user);
         return "redirect:/user/" + user.getId();
     }
 

@@ -21,15 +21,16 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public Optional<User> getUserById(Integer id) {
-        return userRepository.findById(id);
+    public User getUserById(Integer id) {
+        Optional<User> user = userRepository.findById(id);
+        return user.orElse(null);
     }
 
-    public User saveProduct(User product) {
-        return userRepository.save(product);
+    public User saveUser(User user) {
+        return userRepository.save(user);
     }
 
-    public void deleteProduct(Integer id) {
+    public void deleteUser(Integer id) {
         userRepository.deleteById(id);
     }
 
