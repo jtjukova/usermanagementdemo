@@ -2,7 +2,8 @@
 Demo of User Management
 
 # Run the application
-http://localhost:8080
+* mvn package && java -jar target/usermanagement-0.0.1-SNAPSHOT.jar 
+* Open http://localhost:8080
 
 #H2 Database console
 Access H2: 
