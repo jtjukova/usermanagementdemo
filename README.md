@@ -1,5 +1,5 @@
 # User Management Demo
-Demo of User Management
+Demo of User Management Simple CRUD application
 
 # Run the application
 * mvn package && java -jar target/usermanagement-0.0.1-SNAPSHOT.jar 
