@@ -14,7 +14,7 @@ Demo of User Management
 * Run docker-compose up
 * Open http://localhost:8000
 
-#H2 Database console
+# H2 Database console
 Access H2: 
 URL: http://localhost:8080/console
 
